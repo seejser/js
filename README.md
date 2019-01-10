@@ -41,3 +41,25 @@ let randomArray = (length) => {
 返回数组
 
 
+# 实现方法调用计数
+### code：
+```
+'use strict';
+
+var count = 0;
+var oldParseInt = parseInt; // 保存原函数
+
+window.parseInt = function () {
+    count += 1;
+    return oldParseInt.apply(null, arguments); // 调用原函数
+};
+```
+
+#### 测试：
+```
+parseInt('10.1');
+parseInt('20.5');
+parseInt('30.9');
+console.log('count = ' + count); // 3
+```
+
