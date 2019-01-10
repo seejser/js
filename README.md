@@ -1,5 +1,4 @@
-# js code
-##### JS传入指定长度生成随机数组
+# JS传入指定长度生成随机数组
 ```
 let randomArray = (length) => {
     let i = 0
@@ -42,7 +41,7 @@ let randomArray = (length) => {
 
 
 # 实现方法调用计数
-### code：
+#### code：
 ```
 'use strict';
 
